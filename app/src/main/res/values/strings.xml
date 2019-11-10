@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Kissan App</string>
+
+    <string name="card_1_text">Weather Forecast</string>
+    <string name="card_2_text">Organic Cultivation Techniques</string>
+    <string name="card_3_text">Crop Insurance</string>
+    <string name="card_4_text">Helpline Center</string>
+    <string name="card_5_text">Commodities Rate</string>
+    <string name="card_6_text">Crop Protection</string>
+    <string name="card_7_text">Chat</string>
 </resources>
