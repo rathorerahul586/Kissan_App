@@ -2,6 +2,7 @@ package com.codewale.team.kissanapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.browser.customtabs.CustomTabsIntent;
+import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
@@ -15,12 +16,23 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        CardView cardView = findViewById(R.id.WeatherApp);
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(),WeatherApp.class);
+                startActivity(i);
+            }
+        });
     }
+
+
 
     public void cropInsurance (View view){
         CustomTabsIntent builder = new CustomTabsIntent.Builder().build();
         builder.launchUrl(this, Uri.parse("https://pmfby.gov.in/"));
     }
+
 
     public void helplineCenter(View view){
         Intent intent = new Intent(Intent.ACTION_DIAL);
