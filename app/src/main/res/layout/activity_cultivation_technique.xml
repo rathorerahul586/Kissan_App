@@ -4,9 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
+    android:background="@color/colorWhite"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".CultivationTechnique">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme"
+        app:title="Cultivation Techniques"
+        app:titleTextColor="@color/colorWhite" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -14,25 +22,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_margin="10dp"
-                app:cardBackgroundColor="#0097A7"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/card_1_text"
-                    android:textColor="#ffffff"
-                    android:textSize="35sp" />
-            </androidx.cardview.widget.CardView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -48,14 +39,15 @@
                     android:layout_gravity="center"
                     app:cardCornerRadius="10dp">
                     <View
+                        android:id="@+id/tech1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/organic"
-                        android:onClick="cultivationTechnicque"/>
+                        android:background="@drawable/crop_diversity"
+                        android:onClick="techniqueClicked"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/card_2_text"
+                        android:text="@string/technique1"
                         android:textColor="#ffffff"
                         android:layout_gravity="bottom"
                         android:gravity="center"
@@ -71,14 +63,15 @@
                     android:layout_gravity="center"
                     app:cardCornerRadius="10dp">
                     <View
+                        android:id="@+id/tech2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/crop_insurance"
-                        android:onClick="cropInsurance"/>
+                        android:background="@drawable/soil"
+                        android:onClick="techniqueClicked"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/card_3_text"
+                        android:text="@string/technique2"
                         android:textColor="#ffffff"
                         android:layout_gravity="bottom"
                         android:gravity="center"
@@ -90,8 +83,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="10dp">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
@@ -101,14 +94,15 @@
                     android:layout_gravity="center"
                     app:cardCornerRadius="10dp">
                     <View
+                        android:id="@+id/tech3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/farmer_helpline"
-                        android:onClick="helplineCenter"/>
+                        android:background="@drawable/weed_management"
+                        android:onClick="techniqueClicked"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/card_4_text"
+                        android:text="@string/technique3"
                         android:textColor="#ffffff"
                         android:layout_gravity="bottom"
                         android:gravity="center"
@@ -124,14 +118,15 @@
                     android:layout_gravity="center"
                     app:cardCornerRadius="10dp">
                     <View
+                        android:id="@+id/tech4"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/commodity_rates"
-                        android:onClick="commoditiesRate"/>
+                        android:background="@drawable/controling"
+                        android:onClick="techniqueClicked"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/card_5_text"
+                        android:text="@string/technique4"
                         android:textColor="#ffffff"
                         android:layout_gravity="bottom"
                         android:gravity="center"
@@ -143,8 +138,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="10dp">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
@@ -154,14 +149,15 @@
                     android:layout_gravity="center"
                     app:cardCornerRadius="10dp">
                     <View
+                        android:id="@+id/tech5"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/crop_protection"
-                        android:onClick="cropProtection"/>
+                        android:background="@drawable/livestock"
+                        android:onClick="techniqueClicked"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/card_6_text"
+                        android:text="@string/technique5"
                         android:textColor="#ffffff"
                         android:layout_gravity="bottom"
                         android:gravity="center"
@@ -177,13 +173,15 @@
                     android:layout_gravity="center"
                     app:cardCornerRadius="10dp">
                     <View
+                        android:id="@+id/tech6"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/farmer_chat" />
+                        android:background="@drawable/genetic_modification"
+                        android:onClick="techniqueClicked"/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/card_7_text"
+                        android:text="@string/technique6"
                         android:textColor="#ffffff"
                         android:layout_gravity="bottom"
                         android:gravity="center"
@@ -191,6 +189,7 @@
                         android:background="#7C000000"/>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
+            
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

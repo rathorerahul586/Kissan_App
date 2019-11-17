@@ -8,4 +8,24 @@
     <string name="card_5_text">Commodities Rate</string>
     <string name="card_6_text">Crop Protection</string>
     <string name="card_7_text">Chat</string>
-</resources>
+
+
+    <string name="technique1">Crop Diversity</string>
+    <string name="tech1_detail">Now a days a new practice has come into picture which is called -Polyculture- in which a variety of crops can be cultivated simultaneously just to meet the increasing demand of crops. Unlike the ancient practice which was -Monoculture- in which only one type of crop was cultivated in a particular location. Monoculture is the practice used in the agricultural fields where we harvest and cultivate only one type of crop in a particular place. Recently, polyculture has come in existence, where we harvest and cultivate kinds of crops. To meet the increasing crop demand and produce the required soil microorganisms.</string>
+
+    <string name="technique2">Soil Management</string>
+    <string name="tech2_detail">After the cultivation of crops, the soil loses its nutrients and its quality depletes. Organic agriculture initiates the use of natural ways to increase the health of soil. It focuses on the use of bacteria that is present in animal waste which helps in making the soil nutrients more productive to enhance the soil. After cultivation of crops, the soil loses its nutrients and its quality deplete. Organic agriculture initiates the use of natural ways to increase the fertility of the soil.  Hence, it focuses on the use of bacteria that is present in animal waste. The bacteria helps in making the soil nutrients more productive and fertile. </string>
+
+    <string name="technique3">Weed Management</string>
+    <string name="tech3_detail">Weed-, is the unwanted plant that grows in agricultural fields. Organic agriculture pressurizes on lowering the weed rather than removing it completely.Weed is the unwanted plant that grows in agricultural fields.  Organic agriculture focuses on lowering weed and not removing it completely. </string>
+
+    <string name="technique4">Controlling other organisms</string>
+    <string name="tech4_detail"> There are both useful and harmful organisms in the agricultural farm which affect the field. The growth of such organisms needs to be controlled to protect the soil and the crops. This can be done by the use of herbicides and pesticides that contain less chemicals or are natural. Also, proper sanitization of the entire farm should be maintained to control other organisms.There are both useful and harmful organisms in the agricultural farm which affect the field. So, we need to control the growth of such organisms to protect the soil and the crops. We can do this by the use of herbicides and pesticides that contain fewer chemicals or are natural.</string>
+
+    <string name="technique5">Livestock</string>
+    <string name="tech5_detail">Organic farming instigates domestic animals use to increase the sustainability of the farm.</string>
+
+    <string name="technique6">Genetic Modification</string>
+    <string name="tech6_detail">Genetic modification is kept away from this kind of agricultural set up because organic farming focuses on the use of natural ways and discourages engineered animals and plants.</string>
+
+    </resources>

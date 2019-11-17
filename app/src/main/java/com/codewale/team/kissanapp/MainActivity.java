@@ -37,4 +37,8 @@ public class MainActivity extends AppCompatActivity {
         CustomTabsIntent builder = new CustomTabsIntent.Builder().build();
         builder.launchUrl(this, Uri.parse("https://enam.gov.in/web/dashboard/trade-data"));
     }
+
+    public void cultivationTechnicque(View view){
+        startActivity(new Intent(this, CultivationTechnique.class));
+    }
 }
